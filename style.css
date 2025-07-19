@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* sheare styles */
+.display-flex{
+    display: flex;
+}
+.btn-paimary{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+}
+
+/* daek-01 */
+.text-drack-1{
+    color: #000000;
+}
+/* drack-03 */
+.text-dsrk-3{
+    color: #727272;
+}
+/* drack-02 */
+.text-drack-2{
+    font-weight: 500px;
+    color: #424242;
+    font-size: 18px;
+}
+/* text-drack */
+#text-drack{
+    color: #FF900E;
+}
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+}
+
+/* herader styles */
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link {
+    text-decoration: none;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.banner-img{
+    max-width: 100%;
+}
+
+/* main-box-1 */
+.trems{
+    align-items: center;
+}
+.trem-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-features {
+    margin-left: 130px;
+    max-width: 530px;
+}
+.feature-title {
+    font-size: 2.8rem;
+}
+
+/* responsive media query header */
+
+@media screen and (max-width: 576px){
+    .navbar,
+     .nav-links,
+     .trems{
+        flex-direction: column;
+    }
+
+    .trem-img-container {
+    grid-template-columns: repeat(1,1fr);
+    }
+
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+/* mediam size divice */
+@media screen and (min-width:576px) and (max-width:992px){
+    .trems{
+        flex-direction: column;
+    }
+}
