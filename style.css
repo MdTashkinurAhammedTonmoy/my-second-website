@@ -111,13 +111,56 @@ main > section{
 .feature-title {
     font-size: 2.8rem;
 }
+/* main 2 */
+.features{
+    gap: 140px;
+}
+#section-title-broder{
+    border-left: 5px solid #FF900E;
+    padding-left:20px ;
+}
+.festures-cad{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.festures-cad .festures-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#Experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.section-title {
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: #131313;
+}
+.festures-img image{
+    width: 100%;
+}
+
 
 /* responsive media query header */
 
 @media screen and (max-width: 576px){
     .navbar,
      .nav-links,
-     .trems{
+     .trems,
+     .features{
         flex-direction: column;
     }
 
@@ -128,11 +171,19 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* mediam size divice */
 @media screen and (min-width:576px) and (max-width:992px){
-    .trems{
+    .trems,.features {
         flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
